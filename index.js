@@ -23,6 +23,9 @@ hiddenBtn[1].addEventListener("click", () => {
 
 const allTravels = Array.from(document.getElementsByClassName("card-body"));
 alert(`Attenzione, ci sono ${allTravels.length} viaggi disponibili`);
+alert(
+  "se desiderate distruggere i contenuti della pagina andate in console ed inizializzate la funzione 'destroyThePage()';"
+);
 
 const destroyThePage = () => {
   const allImg = Array.from(document.getElementsByTagName("img"));
@@ -34,4 +37,3 @@ const destroyThePage = () => {
     allCards[y].classList.add("d-none");
   }
 };
-destroyThePage();
